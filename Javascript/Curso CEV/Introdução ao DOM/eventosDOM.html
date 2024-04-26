@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        div#area{
+            background-color: rgb(42,139,42);
+            text-align: center;
+            line-height: 200px;
+            font-size: 1.8em;
+            color: white;
+            width: 400px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="area">
+        Interaja...
+    </div>
+    <script>
+        /*
+        eventos de mouse:
+        mouseenter -> quando o mouse entra na caixa selecionada
+        mousemove  -> quando o mouse se move dentro da caixa selecionada
+        mousedown  -> quando eu clicko e seguro dentro da caixa selecionada
+        mouseup    -> qunado solto o click do mouse na caixa selecionada
+        click      -> quando clicko na caixa selecionada
+        mouseout   -> quando movo o mouse para fora da caixa selecionada
+        */
+
+        var a = window.document.getElementById('area')     //addEventListener esta fazendo o papel de escutar cada interação
+        a.addEventListener('click',mouseclick)             //Teria o mesmo efeito  no html onmouseout="mousesaiu()"  onmouseenter="mouseentrou()" onclick="mouseclick()
+        a.addEventListener('mouseenter',mouseentrou)
+        a.addEventListener('mouseout', mousesaiu)
+
+        function mouseclick(){
+            a.innerText = 'Você clicou'
+            a.style.backgroundColor = 'rgb(22,45,56)'
+        }
+        function mouseentrou(){
+            a.innerText = 'Você entrou'
+        }
+        function mousesaiu(){
+            a.innerText = 'Você acabou de sair'// window.document.getElementById('area').innerText = 'Você acabou de sair'
+            a.style.backgroundColor = 'green'           
+        }
+
+    </script>
+</body>
+</html>

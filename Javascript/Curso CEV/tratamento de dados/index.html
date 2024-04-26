@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tramento de dados</title>
+</head>
+<body>
+    <header>
+        <h1>Colhendo dados em JavaScript</h1>
+    </header>
+    <main>
+        <h2>Escopo do HTML</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam hic quo nulla quam adipisci enim dolores dicta laudantium quia aperiam molestias, itaque tempora alias nesciunt blanditiis ipsam a placeat. At?</p>
+
+    </main>
+    <footer>
+        <p>DESENVOLVIDO DURANTE O CURSO DE HTML E CSS DO GUSTAVO GUANABARA</p>
+    </footer>
+    <script>
+        /*var nome = window.prompt('Qual o seu nome ? :')
+        window.alert('Seu nome é '+nome)*/
+        var n1 = window.prompt('Digite um número 0 a 10 :')       //O valor desse comando retorna uma string
+        var n2 = window.prompt('Digite outro número de 0 a 10')
+        
+        var soma = Number.parseInt(n1) + Number.parseInt(n2)      //Conversão dos valores para inteiro podemos usar também só Number
+        window.alert('A soma dos valores é '+ String(soma))       //Conversão para string que também pode ser representado por soma.toString
+        window.alert(`A soma entre ${n1} e ${n2} é ${soma}`)      // Template string para fazer interpolação entre strings
+                                                                  //s.lenght -> quantos caracteres tem uma string
+                                                                  //s.toUpperCase() -> tudo para maiúsculas
+                                                                  //s.LowerCase()   -> tudo para minúsculas
+                                                                  //String(n) ou n.toString(n) conversão para string
+
+    </script>
+</body>
+</html>

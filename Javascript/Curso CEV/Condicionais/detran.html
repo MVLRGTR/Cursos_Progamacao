@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+</head>
+<body>
+    <h1>Sistemas de multa do detran</h1>
+    <p>Digite a velocidade do Carro</p>
+    <input type="number" name="txtvel" id="txtvel"> km/h 
+    <input type="button" value="verificar" id="verificar">
+    <p id="resultado"></p>
+    <script>
+        var txtvel = window.document.getElementById('txtvel')
+        var resultado = window.document.getElementById('resultado')
+        var botao = window.document.getElementById('verificar')
+        botao.addEventListener('click',verificar)
+
+        function verificar(){
+            var velocidade = Number(txtvel.value)
+            if (velocidade > 60){
+                resultado.innerHTML = `Você tomou uma multa , pois passou acima da velocidade da via que 60km/h e você passou ${velocidade}km/h`
+            }
+            else{
+                resultado.innerHTML = 'Você não levou nenhuma multa pois passou a '+ velocidade
+            }
+        }
+
+    </script>
+</body>
+</html>

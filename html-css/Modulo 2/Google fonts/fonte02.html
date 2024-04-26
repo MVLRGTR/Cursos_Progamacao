@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family:'letra1' ;    /* Nome que dou para refenrencia a font importada*/
+            src: url('Patrena Rolane.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+            /*
+            Tipos de format()
+            -opentype(otf)
+            -truetype(ttf)
+            -embedded-opentype
+            -truetype-aat(Apple Advanced Typography)
+            -svg
+            */
+        }
+        body{
+            font-family: letra1 , Helvetica, sans-serif;
+            font-size: 1.5em;
+            font-weight: lighter;
+        }
+        h1{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 3em;
+            font-weight: 100;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título 1</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque cupiditate est, temporibus beatae libero, labore eos porro iure itaque culpa iste tenetur dolore tempora dolores rerum impedit quam delectus? Ducimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic minima consequatur mollitia tenetur sequi nam at fugiat, blanditiis sit possimus rem reprehenderit perferendis voluptatum voluptates, minus voluptate unde natus dolorum!</p>
+</body>
+</html>
