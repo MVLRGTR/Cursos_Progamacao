@@ -1,6 +1,8 @@
 select * from produtos;
 select * from pedidos;
 select * from usuarios;
+select * from images_produto;
+select * from categorias;
 describe usuarios;
 SELECT user, host FROM mysql.user;
 
@@ -38,3 +40,20 @@ id_produto int not null,
 caminho varchar(255) not null,
 foreign key (id_produto) references produtos (i_idproduto_produtos)
 );
+
+DELETE FROM images_produto WHERE id_produto = 4;
+
+create table categorias(
+id_categoria int not null primary key auto_increment,
+nome varchar(250)
+);
+
+alter table produtos modify categoriaId int not null;
+
+insert into categorias (nome) values ('fones');
+insert into categorias (nome) values ('ferramentas');
+insert into categorias (nome) values ('Roupas');
+insert into categorias (nome) values ('Eletro domesticos');
+insert into categorias (nome) values ('Brinquedos');
+
+alter table  produtos add constraint fk_produto_categoria foreign key (categoriaId) references categorias (id_Categoria) ;

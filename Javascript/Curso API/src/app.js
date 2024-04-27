@@ -8,6 +8,8 @@ const bodyParser = require('body-parser')
 const rotaProdutos = require('./routes/produtos')
 const rotaPedidos = require('./routes/pedidos')
 const rotaUsuarios = require('./routes/usuarios')
+const rotaImages = require('./routes/images')
+const rotaCategorias = require('./routes/categoria')
 
 
 app.use(morgan('dev')) //ele atualiza no terminal o tipo de requisição , executando um callback antes de chamar as rotas
@@ -32,6 +34,8 @@ app.use((req,res,next)=>{
 app.use('/produtos', rotaProdutos)
 app.use('/pedidos', rotaPedidos)
 app.use('/usuarios',rotaUsuarios)
+app.use('/images',rotaImages)
+app.use('/categorias',rotaCategorias)
 
 
 app.use((req,res,next)=>{
