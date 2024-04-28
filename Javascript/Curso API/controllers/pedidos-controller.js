@@ -162,3 +162,4 @@ exports.deletePedidos = async (req, res, next) => {
         if (erro) { return res.status(500).send({ erro: erro }) }
     }
 }
+
