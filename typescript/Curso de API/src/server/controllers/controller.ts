@@ -1,1 +1,0 @@
-export * from './cidade/objectexport'  //Nesse arquivo faço a exportação da exportação  , pois cada entidade tera um objet export e nesse arquivo exporto todos os controles de cada entidade

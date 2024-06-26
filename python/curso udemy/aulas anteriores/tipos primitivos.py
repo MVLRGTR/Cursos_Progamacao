@@ -1,7 +1,0 @@
-x = input('Digite algo :')
-print('ele é um numero : {}'.format(x.isnumeric()))
-print('contem somente espacos  : {}'.format(x.isspace()))
-print('ele é alfabetico : {}'.format(x.isalpha()))
-print('ele é alfanumerico : {}'.format(x.isalnum()))
-print('as letras estao em maiuscula {}'.format(x.isupper()))
-print('as letras estão em minusculas {}'.format(x.islower()))
