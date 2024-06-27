@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Fontes em CSS</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif; /*Utilizamos 3 fontes , pois a que vai ser usado e a que for achada primeiro no dispositivo*/
+            font-weight: bolder;
+            font-size: 20px;
+            font-style: italic;
+
+            width: 800px;
+            margin: auto;
+            /*
+            Medidas Absoluta:
+            cm, mm, in(polegada), px, pt, pc
+
+            Medidas Relativas:
+            em, ex, rem, vw, vh, %
+
+            Recomendação da w3c:
+            Usar px ou em
+            16px = 1em
+            */ 
+            
+
+        }
+        h1 {
+            /* Shorthand font
+            - font-style -> font-weight -> font-size -> font-family
+            */
+            font : italic bolder 3em Arial, Helvetica, sans-serif;
+            
+        }
+        h2{
+            font : bolder 2em Arial;
+        }
+        p{
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat ad doloremque enim quae aliquam nam porro omnis laudantium numquam beatae suscipit nesciunt quos voluptatum, distinctio sapiente libero tempore non dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis molestias laboriosam rem! Voluptatem asperiores similique consequatur natus quia est, enim incidunt voluptate autem ducimus assumenda nisi eum corporis aperiam hic?</p>
+    <h2>Título 2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, possimus mollitia? Adipisci inventore mollitia quod error ad deleniti rem quos placeat reprehenderit ducimus enim, dignissimos vel cum alias temporibus quas.</p>
+</body>
+</html>

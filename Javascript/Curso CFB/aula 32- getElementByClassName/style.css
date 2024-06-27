@@ -1,0 +1,36 @@
+.curso{
+    padding: 10px;
+    border: 20px;  
+    margin: 12px; 
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.514);
+    width: 200px;
+    height: 40px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.8s;
+    cursor: pointer;
+}
+
+.c2{
+    background-color: rgba(0, 0, 0, 0.801);
+    color:white;
+}
+
+.c1:hover{
+    background-color: rgb(0, 255, 55);
+    transform: scale(1.2);
+}
+
+.c2:hover{
+    background-color: red;
+    transform: scale(1.2);
+}
+
+.destaque{
+    background-color: rgb(68, 84, 136) !important;
+    color: #ccc !important;
+    border-color: #f00 !important;
+}

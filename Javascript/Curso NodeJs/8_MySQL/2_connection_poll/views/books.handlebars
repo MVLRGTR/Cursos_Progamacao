@@ -1,0 +1,9 @@
+<h1>Livros Disponiveis</h1>
+<section class="books-container">
+    <a href="/">Adionar Livro</a>
+    {{#each books}}
+        <article>
+            <a href="book/{{this.idbooks}}"><p>#{{this.idbooks}} - <span class="bold">{{this.title}}</span> - {{this.pages}} páginas</p></a>
+        </article>
+    {{/each}}
+</section>

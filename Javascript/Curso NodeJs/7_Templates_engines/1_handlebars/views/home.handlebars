@@ -1,0 +1,16 @@
+<h1>Olá handlebars</h1>
+<p>O nome do Usuario é {{usuario.nome}} e a sua idade é {{usuario.idade}} e sua profissião é {{usuario.profissao}}</p>
+
+{{#if aprovado}}
+<p>Parabéns seu cadastro foi aprovado !!!</p>
+{{else}}
+<p>Infelizmente seu cadastro ainda não foi aprovado</p>
+{{/if}}
+
+
+{{#if auth}}
+<p>Você está autenticado !!!</p>
+<a href="/dashboard"> Clique aqui para acessar a área de membros !!!</a>
+<p>Você não está autenticado !!!</p>
+
+{{/if}}
