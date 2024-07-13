@@ -29,6 +29,16 @@ class Product {
         const product = await connection.db().collection('products').findOne({_id: new ObjectId(id)}) //o id no mongodb e um objeto e precisa de um operador proprio 
         return product
     }
+
+    static async RemoveProductById(id){
+        const ProductRemove = await connection.db().collection('products').deleteOne({_id: new ObjectId(id)})
+        return
+    }
+
+    EditProductById(id){
+        connection.db().collection('products').updateOne({_id: new ObjectId(id)},{$set: this})
+        return
+    }
 }
 
 module.exports = Product
