@@ -16,7 +16,7 @@ const ImageStorages = multer.diskStorage({
         cb(null,`public/images/${folder}`)
     },
     filename: function (req,file,cb){
-        cb(null,Date.now()+path.extname(file.originalname)) //Junto o nome original do arquivo mais a data atual do upload do arquivo
+        cb(null,Date.now()+String(Math.floor(Math.random()*100))+path.extname(file.originalname)) //Junto o nome original do arquivo mais a data atual do upload do arquivo
     }
 })
 
