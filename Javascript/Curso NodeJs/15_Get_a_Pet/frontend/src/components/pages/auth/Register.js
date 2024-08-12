@@ -17,6 +17,7 @@ function Register(){
 
     function handleSubmit(event){
         event.preventDefault() //para e execução do formulario
+        console.log(user)
         register(user)
     }
     return(
