@@ -5,6 +5,8 @@ import Login from './components/pages/auth/Login'
 import Register from './components/pages/auth/Register'
 import Home from './components/pages/Home'
 import Profile from './components/pages/User/Profile'
+import Mypets from './components/pages/pets/Mypets'
+import AddPet from './components/pages/pets/AddPet'
 /*Components */
 import Navbar from './components/Layouts/Navbar'
 import Footer from './components/Layouts/Footer'
@@ -25,7 +27,10 @@ function App() {
             <Route path='/login' element={<Login />} />
             <Route path='/register' element={<Register />} />
             <Route path='/user/profile' element={<Profile />} />
+            <Route path='/pets/mypets' element={<Mypets />} />
+            <Route path='/pets/addpet' element={<AddPet />} />
             <Route path='/' element={<Home />} />
+            
 
           </Routes>
         </Container>
