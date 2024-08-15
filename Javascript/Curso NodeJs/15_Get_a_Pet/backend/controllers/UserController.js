@@ -82,7 +82,7 @@ module.exports = class UserController{
             return
         }
 
-        const CheckPassword = bcrypt.compare(password,UserExists.password)
+        const CheckPassword = await bcrypt.compare(password,UserExists.password)
 
         if(!CheckPassword){
             res.status(422).json({

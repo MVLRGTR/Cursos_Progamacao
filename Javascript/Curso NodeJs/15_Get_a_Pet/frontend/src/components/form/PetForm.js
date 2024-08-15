@@ -24,6 +24,7 @@ function PetForm({ petData, btnText, handleSubmit }) {
 
     function submit(evt) {
         evt.preventDefault()
+        console.log(pet)
         handleSubmit(pet)
     }
 
@@ -42,8 +43,8 @@ function PetForm({ petData, btnText, handleSubmit }) {
             </div>
             <Input text='Imagens do Pet' type='file' name='images' handleOnChange={onFileChange} multiple={true} />
             <Input text='Nome do Pet' type='text' name='name' placeholder='Digite o nome do pet' handleOnChange={handleChange} value={pet.name || ''} />
-            <Input text='Idade do Pet' type='text' name='age' placeholder='Digite a idade do pet' handleOnChange={handleChange} value={pet.age || ''} />
-            <Input text='Peso do Pet' type='text' name='weight' placeholder='Digite o peso do pet' handleOnChange={handleChange} value={pet.weight || ''} />
+            <Input text='Idade do Pet' type='text' name='age' placeholder='Digite a idade do pet em meses' handleOnChange={handleChange} value={pet.age || ''} />
+            <Input text='Peso do Pet' type='text' name='weight' placeholder='Digite o peso do pet em  kg' handleOnChange={handleChange} value={pet.weight || ''} />
             <Select name='color' text='Selecione a cor' options={colors} handleOnChange={handleColor} value={pet.color || ''} />
             <input type="submit" value={btnText} />
         </form>
@@ -51,3 +52,4 @@ function PetForm({ petData, btnText, handleSubmit }) {
 }
 
 export default PetForm
+
