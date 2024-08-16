@@ -29,13 +29,13 @@ function AddPet() {
 
     formData.append('pet', petFormData)
 
-    for (let [key, value] of formData.entries()) {
-      console.log(`${key}: ${value}`);
-    }
+    console.log(`token :${JSON.parse(token)}}`)
 
-    const data = await api.post('pets/create', formData, {
-      Authorization: `Bearer ${JSON.parse(token)}`,
-      'Content-Type': 'multipart/form-data'
+    const data = await api.post('/pets/create', formData, {
+      headers:{
+        Authorization: `Bearer ${JSON.parse(token)}`,
+        'Content-Type': 'multipart/form-data'
+      }
     })
       .then((response) => {
         console.log(`then response : ${response.data}`)

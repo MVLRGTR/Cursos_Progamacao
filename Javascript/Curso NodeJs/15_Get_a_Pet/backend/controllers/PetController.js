@@ -158,6 +158,8 @@ module.exports = class PetController{
         const images = req.files
         const updateData = {}
 
+        console.log(`req.files : ${req.files}`)
+
         if(!ObjectId.isValid(id)){
             res.status(422).json({message:'Id do pet inválido , por favor verifique o que foi digitado'})
             return
@@ -204,15 +206,12 @@ module.exports = class PetController{
         }
         updateData.available = available
 
-
-        if(images.length === 0){
-            res.status(422).json({message:'Pelo menos uma imagem é obrigatória , por favor verifique o que foi digitado'})
-            return
-        }
-        updateData.images = []
-        for(let image of images){
-            updateData.images.push(image.filename)
-            console.log(`image.filename :${image.filename}`)
+        console.log(`images :${images}`)
+        if(images.length > 0){
+            updateData.images = []
+            for(let image of images){
+                updateData.images.push(image.filename)
+            }
         }
 
         await Pet.findByIdAndUpdate(id,updateData)

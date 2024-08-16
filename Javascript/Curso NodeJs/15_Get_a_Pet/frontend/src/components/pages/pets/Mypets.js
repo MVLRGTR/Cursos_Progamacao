@@ -25,6 +25,25 @@ function Mypets() {
         })
     }, [token])
 
+    async function removePet(id){
+        let msgType = 'success'
+
+        const data = await api.delete(`/pets/${id}`,{
+            headers:{
+                Authorization: `Bearer ${JSON.parse(token)}`
+            }
+        }).then((response)=>{
+            const updatedPets = pets.filter((pet)=> pet._id !== id)
+            setPets(updatedPets)
+            return response.data
+        }).catch((Erro)=>{
+            msgType ='error'
+            return Erro.response.data
+        })
+
+        setFlashMessage(JSON.stringify(data.message),msgType)
+    }
+
     return (
         <section>
             <div className={styles.petlist_header}>
@@ -43,8 +62,10 @@ function Mypets() {
                                     {pet.adopter === true ?
                                         (<button className={styles.conclude_btn}>Concluir adoção</button>) :
                                         (<>
-                                            <Link to={`/pet/edit/${pet._id}`}>Editar</Link>
-                                            <button>Excluir</button>
+                                            <Link to={`/pets/edit/${pet._id}`}>Editar</Link>
+                                            <button onClick={()=>{
+                                                removePet(pet._id) //o código é escrito assim para que o código espere a execução do comando onClick para executar a ação 
+                                            }}>Excluir</button>
                                         </>
                                         )}
                                 </>) :
