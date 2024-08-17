@@ -19,24 +19,24 @@ function Home(){
 
     return(
         <section>
-            <div>
+            <div className={styles.pet_home_header}>
                 <h1>Adote um Pet</h1>
                 <p>Veja os detalhes de cada um e conheça o tutor deles</p>
             </div>
-            <div>
+            <div className={styles.pet_container}>
                 {pets.length > 0 && (
                     pets.map((pet)=>(
-                        <div>
-                            <p>Imagem do Pet</p>
+                        <div className={styles.pet_card}>
+                            <img src={`${process.env.REACT_APP_API}images/pets/${pet.images[0]}`} className={styles.pet_card_image}></img>
                             <h3>{pet.name}</h3>
                             <p>
                                 <span className="bold">Peso :</span>{pet.weight}kg
                             </p>
                             {pet.available === true ? (
-                                <Link to={`pet/${pet._id}`}>Mais Detalhes</Link>
+                                <Link to={`pets/${pet._id}`}>Mais Detalhes</Link>
                             ) : 
                             (
-                                <p>Adotado</p>
+                                <p className={styles.adopted_text }>Adotado</p>
                             ) }
                         </div>
                     ))
