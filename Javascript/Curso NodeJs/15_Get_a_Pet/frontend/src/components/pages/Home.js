@@ -25,8 +25,8 @@ function Home(){
             </div>
             <div className={styles.pet_container}>
                 {pets.length > 0 && (
-                    pets.map((pet)=>(
-                        <div className={styles.pet_card}>
+                    pets.map((pet,index)=>(
+                        <div className={styles.pet_card} key={index}>
                             <img src={`${process.env.REACT_APP_API}images/pets/${pet.images[0]}`} className={styles.pet_card_image}></img>
                             <h3>{pet.name}</h3>
                             <p>

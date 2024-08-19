@@ -86,3 +86,7 @@ margin-left: auto;
     background-color: #25b426;
     transform: scale(1.2);
 }
+
+.contacts p{
+    margin-bottom: 0.5em;
+}
