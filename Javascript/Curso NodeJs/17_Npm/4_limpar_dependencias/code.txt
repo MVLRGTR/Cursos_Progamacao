@@ -1,0 +1,2 @@
+para simplesmete limpar uma dependecnia do projeto basta eu apenas apagar a mesma do json e depois aplicar o npm prune (ele faz a comparação o ques está no node_modelu e np package-jason e limpa o mesmo)
+isso é uma otimização ao unistall , pois escolhemos no json os pacotes e depois so aplicamos o comando npm prune

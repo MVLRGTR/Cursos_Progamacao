@@ -1,0 +1,12 @@
+{
+  "name": "2_configuracao_modulo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Marcos <inteligencecode360@gmail.com>",
+  "license": "MIT",
+  "description": ""
+}

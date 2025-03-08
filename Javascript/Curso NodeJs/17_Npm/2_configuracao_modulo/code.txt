@@ -1,0 +1,10 @@
+npm config set init-author-name Marcos 
+npm config set init-author-email  inteligencecode360@gmail.com
+npm config set init-license MIT
+npm config set init-author-url "https://www.inteligencecode360.com.br"
+
+https://docs.npmjs.com/cli/v11/using-npm/config
+
+npm get - ver configurção padrões
+
+npm config delete auhtor // deleta o nome , comando para deletar qualquer configurção

@@ -8,5 +8,5 @@ export default function Home() {
     <main className="flex w-full h-screen justify-start items-start">
       <Calcimc/>
     </main>
-  );
+  )
 }

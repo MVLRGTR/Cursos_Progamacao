@@ -1,0 +1,14 @@
+{
+  "name": "6_dependencias_atualizacao",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Marcos Ribeiro <inteligencecode360@gmail.com> (https://www.inteligencecode360.com.br/)",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "jquery": "^3.0.0"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "3_instalacao_global",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Marcos Ribeiro <inteligencecode360@gmail.com> (https://www.inteligencecode360.com.br/)",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}

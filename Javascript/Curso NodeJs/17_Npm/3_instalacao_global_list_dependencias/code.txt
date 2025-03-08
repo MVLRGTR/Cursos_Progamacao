@@ -1,0 +1,7 @@
+npm install request -g (flag para a instalação global)
+segundo passo e executar o comando npm link request para criar o link com a dependencia global e o require funcionar 
+
+para desintalar modulos globais o comando é : npm remove request -g (flag para o global)
+
+para listar dependencias utilizamos o comando npm list (mostra totas as dependencias e as suas sub-dependencias)
+dependencias globais npm list -g
