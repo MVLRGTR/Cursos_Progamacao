@@ -1,0 +1,2 @@
+as vezes temos pacotes que dependem da mesma dependencia 
+npm dedupe ou npm ddp
