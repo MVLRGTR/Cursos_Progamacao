@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d325e6cfa0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>WhatsApp Web Clone</title>
+</head>
+
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="tolbarcontainer">
+                <img class="user-photo" src="images/avatar1.png" alt="user">
+                <div class="auxicons-toolbar-container">
+                    <i class="fas fa-spinner"></i>
+                    <i class="fas fa-comment-alt"></i>
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+            </div>
+            <div class="notifications-container">
+                <i class="fas fa-bell-slash"></i>
+                <p class="receive-notification">Receba notificações de novas menssagens</p>
+                <p class="activate-notification">Ativar notificações na area de trabalho <i class="fa fa-angle-right"></i></p>
+            </div>
+            <div class="search-container">
+                <i id="contact-search" class="fas fa-search"></i>
+                <input type="text" name="search" id="seach" placeholder="Procurar ou começar uma nova conversa">
+            </div>
+            <div class="contacts-container">
+                <div class="contact-box active-chat">
+                    <img class="user-photo" src="images/avatar2.png" alt="">
+                    <div class="user-info">
+                        <p class="user-name">Sabrina Matos</p>
+                        <p class="user-messagepreview"><i class="fas fa-check-double"></i> Oi tudo Bem ?</p>
+                    </div>
+                    <div class="message-info">
+                        <p class="message-time">22:40</p>
+                    </div>
+                </div>
+                <div class="contact-box">
+                    <img class="user-photo" src="images/avatar3.png" alt="">
+                    <div class="user-info">
+                        <p class="user-name">Lucas Vitor</p>
+                        <p class="user-messagepreview">Vai na quarta-feira ?</p>
+                    </div>
+                    <div class="message-info">
+                        <p class="message-time">12:40</p>
+                        <p class="message-pending">3</p>
+                    </div>
+                </div>
+                <div class="contact-box">
+                    <img class="user-photo" src="images/avatar4.png" alt="">
+                    <div class="user-info">
+                        <p class="user-name">Luana Gomes</p>
+                        <p class="user-messagepreview">Está tudo ok com a atualização !!!</p>
+                    </div>
+                    <div class="message-info">
+                        <p class="message-time">08:40</p>
+                        <p class="message-pending">5</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+        <main class="chat-container">
+
+        </main>
+    </div>
+</body>
+
+</html>
