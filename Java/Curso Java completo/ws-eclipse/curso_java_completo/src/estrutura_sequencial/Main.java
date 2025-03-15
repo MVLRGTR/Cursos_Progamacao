@@ -1,4 +1,4 @@
-package curso;
+package estrutura_sequencial;
 
 import java.util.Locale;
 
