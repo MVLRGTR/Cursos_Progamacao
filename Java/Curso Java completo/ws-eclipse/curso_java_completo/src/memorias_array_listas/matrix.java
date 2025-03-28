@@ -35,7 +35,7 @@ public class matrix {
 		}
 		
 		System.out.printf("%nNegative numbers = %d",count);
-		
+		sc.close();
 	}
 
 }
