@@ -40,11 +40,12 @@ public class Order {
 	public String toString() {
 		StringBuilder sb = new StringBuilder();
 		sb.append("ORDER SUMARY : "+"\n");
-		sb.append("Order Status : " + this.status);
-		sb.append("Client :"+ client.toString());
-		sb.append("Order items:");
+		sb.append("Order moment :"+moment+"\n");
+		sb.append("Order Status : " + this.status+"\n");
+		sb.append("Client :"+ client.toString()+"\n");
+		sb.append("Order items:" + "\n");
 		for(OrderItem item : items) {
-			sb.append(item.toString());
+			sb.append(item.toString() + "\n");
 		}
 		sb.append("Total price : R$:"+this.total());
 		
