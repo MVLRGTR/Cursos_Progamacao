@@ -31,7 +31,7 @@ public class BussinesAccount extends Account{  // informo que a clasee Bussines 
 		}
 	}
 	
-	@Override // COMO ESSE METODO ELE EXISTE EM ACCOUNT UTLIZO O OVERRIDA PARA SOBRESCREVER AQUELE METODO 
+	@Override // COMO ESSE METODO ELE EXISTE EM ACCOUNT UTLIZO O OVERRIDA PARA SOBRESCREVER AQUELE METODO EXPLICITANDO ISSO PARA O COMPILADOR
 	public void witdraw(double amount) {
 		super.witdraw(amount);//AQUI EU CHAMO O METODO DA SUPERCLASSE UTILIZANDO O SUPER
 		balance -= 2;
