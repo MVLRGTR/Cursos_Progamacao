@@ -7,6 +7,8 @@ public class ProgamAccount {
 	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
+		Double initialBalance,withdrawLimit;
+		String holder;
 		
 		try {
 			System.out.println("Enter Account data");
@@ -14,13 +16,13 @@ public class ProgamAccount {
 			Integer number = sc.nextInt();
 			
 			System.out.printf("Holder name:");
-			String holder = sc.next();
+			holder = sc.next();
 			
 			System.out.printf("Initial Balance :");
-			Double initialBalance = sc.nextDouble();
+			initialBalance = sc.nextDouble();
 			
 			System.out.printf("Withdraw limit :");
-			Double withdrawLimit = sc.nextDouble();
+			withdrawLimit = sc.nextDouble();
 			
 			Account account = new Account(number,holder,initialBalance,withdrawLimit);
 			
