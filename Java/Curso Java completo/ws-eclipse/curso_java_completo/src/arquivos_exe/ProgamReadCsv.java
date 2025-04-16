@@ -53,6 +53,8 @@ public class ProgamReadCsv {
 		}catch (IOException e) {
 			
 		}
+		
+		sc.close();
 	}
 
 }
