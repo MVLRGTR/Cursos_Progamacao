@@ -6,9 +6,13 @@ public class RentalService {
 	
 	private Double pricePerHour;
 	private Double pricePerDay;
-	private BrasilTaxService taxService;
+	private TaxService taxService;
 	
-	public RentalService(Double pricePerHour, Double pricePerDay, BrasilTaxService taxService) {
+	/*SEM A INTERFACE TEMOS O ACLOPAMENTO ENTRE RENTALSERVICE E BRASILTAXSERVICE , OU SEJA SEMPRE QUE EU MUDAR DE PAIS DUAS CLASSES SERÃO MODIFICADAS,
+	 * COISA ESSA QUE NÃO ACONTECE QUANDO APLICO UMA INTEFACE
+	 * ANTES DA INTERFACE //RENTALSERVICE -> BRASILTAXSERVICE APOS INTERFACE // RENTALSERVICE -> TAXSERVICE <- BRASILTAXSERVICE*/
+	
+	public RentalService(Double pricePerHour, Double pricePerDay, TaxService taxService) {
 		this.pricePerHour = pricePerHour;
 		this.pricePerDay = pricePerDay;
 		this.taxService = taxService;
