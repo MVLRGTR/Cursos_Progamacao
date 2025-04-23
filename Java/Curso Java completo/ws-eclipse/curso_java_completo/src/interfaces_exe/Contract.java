@@ -58,7 +58,7 @@ public class Contract {
 		StringBuilder sb = new StringBuilder();
 		sb.append("Parcelas:\n");
 		for(Installment inst : installments) {
-			sb.append(inst.getDueDate() + " - " + inst.getAmount() + "\n");
+			sb.append(inst.toString() + "\n");
 		}
 		return sb.toString();
 		

@@ -1,9 +1,11 @@
 package interfaces_exe;
 
 import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 
 public class Installment { //PARCELA
 	
+	private static DateTimeFormatter fmt1 = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 	private LocalDate dueDate;
 	private Double amount;
 	
@@ -30,6 +32,10 @@ public class Installment { //PARCELA
 
 	public void setAmount(Double amount) {
 		this.amount = amount;
+	}
+
+	public String toString() {
+		return dueDate.format(fmt1) + " - " + String.format("%.2f", amount);
 	}
 	
 	
