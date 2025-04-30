@@ -3,9 +3,10 @@ package entities;
 public class Elemento {
 	
 	public Elemento proximo;
-	public Pedido valor;
+	public int valor;
 	
-	public Elemento(Pedido valor) {
+	public Elemento(int valor) {
 		this.valor = valor;
 	}
+
 }
