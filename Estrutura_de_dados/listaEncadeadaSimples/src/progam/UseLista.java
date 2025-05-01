@@ -27,9 +27,13 @@ public class UseLista {
 		System.out.println("-------------------------");
 		System.out.println("Inserindo na posição 5 o valor 10... ");
 		lista.inserirNaPosicao(5,10);
+		System.out.println("Mostrando lista...");
+		for(int i = 0 ; i < lista.tamanho();i++) {
+			System.out.println("Posição : "+(i+1)+" Valor : "+lista.elementoNaPosicao(i).valor);
+		}
 		
 		System.out.println("-------------------------");
-		System.out.println("Retornando primeiro e ultimo elemento  : " + lista.primeiroElemento().valor + " - "+lista.ultimoElemento().valor);
+		System.out.println("Retornando primeiro e ultimo elemento  : {" + lista.primeiroElemento().valor + "} - {"+lista.ultimoElemento().valor+"}");
 		
 		System.out.println("-------------------------");
 		System.out.println("Retornando elemento na posição 6 : "+lista.elementoNaPosicao(6).valor);
@@ -67,7 +71,7 @@ public class UseLista {
 		}
 		
 		System.out.println("-------------------------");
-		System.out.println("Buscando elemento 4 Posição : "+lista.buscaElemento(4));
+		System.out.println("Buscando elemento 4 Posição : "+lista.buscaElemento(5));
 		System.out.println("Mostrando lista...");
 		for(int i = 0 ; i < lista.tamanho();i++) {
 			System.out.println("Posição : "+(i+1)+" Valor : "+lista.elementoNaPosicao(i).valor);

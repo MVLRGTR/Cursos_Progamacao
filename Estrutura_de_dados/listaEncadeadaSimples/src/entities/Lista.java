@@ -35,7 +35,7 @@ public class Lista {
 	
 	public void inserirNaPosicao(int posicao,int valor) {
 		Elemento novo = new Elemento(valor);
-		this.irPosicao(posicao);
+		this.irPosicao(posicao-2);
 		novo.proximo = atual.proximo;
 		atual.proximo = novo;
 	}
@@ -74,6 +74,7 @@ public class Lista {
 			this.removePrimeiro();
 		}else {
 			this.irPosicao(posi-1);
+			System.out.println("elemento atual : "+atual.valor);
 			Elemento temp =  atual.proximo;
 			this.irPosicao(posi-2);
 			atual.proximo=temp;
