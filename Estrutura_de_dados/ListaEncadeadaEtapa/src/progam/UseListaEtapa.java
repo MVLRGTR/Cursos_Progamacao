@@ -1,5 +1,6 @@
 package progam;
 
+import entities.Etapa;
 import entities.Lista;
 
 public class UseListaEtapa {
@@ -23,7 +24,45 @@ public class UseListaEtapa {
 		for(int i = 0 ; i < lista.tamanho();i++) {
 			System.out.println("Posição : "+(i+1)+" Valor : "+lista.etapaNaPosicao(i).toString());
 		}
-
+		
+		System.out.println("-------------------------");
+		System.out.println("Inserindo Etapa na posição 3...");
+		lista.insereNaPosicao("Lista de materiais",3,3);
+		for(int i = 0 ; i < lista.tamanho();i++) {
+			System.out.println("Posição : "+(i+1)+" Valor : "+lista.etapaNaPosicao(i).toString());
+		}
+		
+		System.out.println("-------------------------");
+		System.out.println("Mostrando 1° etapa : "+lista.primeira().toString());
+		System.out.println("Mostrando ultima etapa : "+lista.ultima().toString());
+		System.out.println("Mostrando etapa na posição 5 : "+lista.etapaNaPosicao(5).toString());
+		
+		System.out.println("-------------------------");
+		System.out.println("Removendo primeira Etapa");
+		lista.removePrimeiro();
+		for(int i = 0 ; i < lista.tamanho();i++) {
+			System.out.println("Posição : "+(i+1)+" Valor : "+lista.etapaNaPosicao(i).toString());
+		}
+		
+		System.out.println("-------------------------");
+		System.out.println("Removendo ultima Etapa");
+		lista.removeUltimo();
+		for(int i = 0 ; i < lista.tamanho();i++) {
+			System.out.println("Posição : "+(i+1)+" Valor : "+lista.etapaNaPosicao(i).toString());
+		}
+		
+		System.out.println("-------------------------");
+		System.out.println("Removendo Etapa na posição 4...");
+		lista.removeNaPosicao(4);
+		for(int i = 0 ; i < lista.tamanho();i++) {
+			System.out.println("Posição : "+(i+1)+" Valor : "+lista.etapaNaPosicao(i).toString());
+		}
+		
+		System.out.println("-------------------------");
+		System.out.println("Removendo Etapa Lista de materiais...");
+		lista.removeEtapa(new Etapa("Lista de materiais",3));
+		for(int i = 0 ; i < lista.tamanho();i++) {
+			System.out.println("Posição : "+(i+1)+" Valor : "+lista.etapaNaPosicao(i).toString());
+		}
 	}
-
 }

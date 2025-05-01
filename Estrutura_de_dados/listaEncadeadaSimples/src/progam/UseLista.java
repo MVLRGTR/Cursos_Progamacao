@@ -71,13 +71,12 @@ public class UseLista {
 		}
 		
 		System.out.println("-------------------------");
-		System.out.println("Buscando elemento 4 Posição : "+lista.buscaElemento(5));
+		System.out.println("Buscando elemento 5 Posição : "+(lista.buscaElemento(5)+1));
 		System.out.println("Mostrando lista...");
 		for(int i = 0 ; i < lista.tamanho();i++) {
 			System.out.println("Posição : "+(i+1)+" Valor : "+lista.elementoNaPosicao(i).valor);
 		}
-		
+	
 		
 	}
-
 }

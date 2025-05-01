@@ -4,7 +4,7 @@ public class Lista {
 	
 	private Elemento inicio=null;
 	private Elemento fim=null;
-	private Elemento atual=null;
+	public Elemento atual=null;
 	
 	public Lista(){
 	}
@@ -61,7 +61,6 @@ public class Lista {
 	}
 	
 	public void removeUltimo() {
-		System.out.println("entrou aqui");
 		this.irPosicao(this.tamanho()-2);
 		System.out.println("atual : "+atual.valor);
 		fim = atual;
@@ -74,7 +73,6 @@ public class Lista {
 			this.removePrimeiro();
 		}else {
 			this.irPosicao(posi-1);
-			System.out.println("elemento atual : "+atual.valor);
 			Elemento temp =  atual.proximo;
 			this.irPosicao(posi-2);
 			atual.proximo=temp;
