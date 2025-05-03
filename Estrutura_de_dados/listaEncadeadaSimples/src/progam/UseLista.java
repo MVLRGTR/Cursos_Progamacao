@@ -17,6 +17,8 @@ public class UseLista {
 		lista.inserirUltimo(7);
 		lista.inserirUltimo(8);
 		
+		System.out.println("Retornando elemento na posição 0 : "+lista.elementoNaPosicao(0).valor);
+		
 		System.out.println("Tamanho da lista : "+lista.tamanho());
 		System.out.println("-------------------------");
 		System.out.println("Mostrando Lista!!!");
