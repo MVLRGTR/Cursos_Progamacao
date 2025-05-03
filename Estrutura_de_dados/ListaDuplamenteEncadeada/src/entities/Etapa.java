@@ -32,7 +32,7 @@ public class Etapa {
 
 	@Override
 	public String toString() {
-		return "[Etapa =" + name + ", com duração=" + duration + "]";
+		return "[Etapa = " + name + ", com duração = " + duration + " dias" + "]";
 	}
 	
 	
