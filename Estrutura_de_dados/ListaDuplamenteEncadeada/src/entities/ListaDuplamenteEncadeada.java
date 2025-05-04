@@ -70,11 +70,13 @@ public class ListaDuplamenteEncadeada {
 	}
 	
 	public void removeNaPosicao(int posicao) {
-		this.irPosicao(posicao-1);
-		Etapa temp = atual.proximo;
-		this.atual = this.atual.anterior;
-		this.atual.proximo = temp;
-		temp.anterior=this.atual;
+		if(posicao > -1) {
+			this.irPosicao(posicao-1);
+			Etapa temp = atual.proximo;
+			this.atual = this.atual.anterior;
+			this.atual.proximo = temp;
+			temp.anterior=this.atual;
+		}
 	}
 	
 	public void removeElemento(Etapa etapa) {

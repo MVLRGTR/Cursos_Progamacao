@@ -1,5 +1,6 @@
 package progam;
 
+import entities.Etapa;
 import entities.ListaDuplamenteEncadeada;
 
 public class UseListaDuplamenteEncadeada {
@@ -20,14 +21,61 @@ public class UseListaDuplamenteEncadeada {
 		lista.insereUltimo("Encher caixão", 3);
 		lista.insereUltimo("Bater a lage", 7);
 		
-		
-		System.out.println("Tamanho da lista : "+lista.tamanho());
 		System.out.println("-------------------------");
+		System.out.println("Tamanho da lista : "+lista.tamanho());
 		System.out.println("Mostrando Lista!!!");
 		for(int i = 0 ; i < lista.tamanho();i++) {
 			System.out.println("Posição : "+(i+1)+" Valor : "+lista.elementoNaPosicao(i).toString());
 		}
-
+		
+		System.out.println("-------------------------");
+		System.out.println("Inserindo Contratar pessoal na posicao 4...");
+		lista.insereNaPosicao("Contratar pessoal", 2, 4);
+		System.out.println("Mostrando Lista!!!");
+		for(int i = 0 ; i < lista.tamanho();i++) {
+			System.out.println("Posição : "+(i+1)+" Valor : "+lista.elementoNaPosicao(i).toString());
+		}
+		
+		System.out.println("-------------------------");
+		System.out.println("Mostrando primeiro e ultimo elemento da lista : "+lista.primeiro()+" - "+lista.ultimo());
+		System.out.println("Mostrando Lista!!!");
+		for(int i = 0 ; i < lista.tamanho();i++) {
+			System.out.println("Posição : "+(i+1)+" Valor : "+lista.elementoNaPosicao(i).toString());
+		}
+		
+		System.out.println("-------------------------");
+		System.out.println("Removendo primeiro elemento da lista... ");
+		lista.removePrimeiro();
+		System.out.println("Mostrando Lista!!!");
+		for(int i = 0 ; i < lista.tamanho();i++) {
+			System.out.println("Posição : "+(i+1)+" Valor : "+lista.elementoNaPosicao(i).toString());
+		}
+		
+		System.out.println("-------------------------");
+		System.out.println("Removendo ultimo elemento da lista... ");
+		lista.removeUltimo();
+		System.out.println("Mostrando Lista!!!");
+		for(int i = 0 ; i < lista.tamanho();i++) {
+			System.out.println("Posição : "+(i+1)+" Valor : "+lista.elementoNaPosicao(i).toString());
+		}
+		
+		System.out.println("-------------------------");
+		System.out.println("Removendo elemento na posição 3 ... ");
+		lista.removeNaPosicao(3);
+		System.out.println("Mostrando Lista!!!");
+		for(int i = 0 ; i < lista.tamanho();i++) {
+			System.out.println("Posição : "+(i+1)+" Valor : "+lista.elementoNaPosicao(i).toString());
+		}
+		
+		System.out.println("-------------------------");
+		System.out.println("Removendo elemento Comprar materias... ");
+		Etapa etapa = new Etapa("Comprar materias",5);
+		lista.removeElemento(etapa);
+		System.out.println("Mostrando Lista!!!");
+		for(int i = 0 ; i < lista.tamanho();i++) {
+			System.out.println("Posição : "+(i+1)+" Valor : "+lista.elementoNaPosicao(i).toString());
+		}
+		
 	}
 
 }

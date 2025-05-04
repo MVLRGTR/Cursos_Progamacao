@@ -14,6 +14,7 @@ public class Etapa {
 	
 	@Override
 	public boolean equals(Object obj) {
+		System.out.println("entrou aqui");
 	    if (this == obj) return true;
 	    if (obj == null || getClass() != obj.getClass()) return false;
 
@@ -34,6 +35,4 @@ public class Etapa {
 	public String toString() {
 		return "[Etapa = " + name + ", com duração = " + duration + " dias" + "]";
 	}
-	
-	
 }
