@@ -70,19 +70,28 @@ public class ListaDuplamenteEncadeada {
 	}
 	
 	public void removeNaPosicao(int posicao) {
-		if(posicao > -1) {
+		System.out.println("posicao : "+posicao);
+		if(posicao > -1 && posicao <= this.tamanho()) {
 			this.irPosicao(posicao-1);
 			Etapa temp = atual.proximo;
 			this.atual = this.atual.anterior;
 			this.atual.proximo = temp;
 			temp.anterior=this.atual;
+		}else {
+			System.out.println("Pocisão inexistente na lista !!!");
 		}
+		
 	}
 	
 	public void removeElemento(Etapa etapa) {
 		int posicao = this.buscaElemento(etapa);
-		if(posicao>-1) {
+		if(posicao > 0 && posicao < this.tamanho()-1) {
+			posicao+=1;//ADIOCIONO +1 POIS O METEDO REMOVE NA POSICAO TRABALHA COM O INDICE 1 DO USUARIO E O METODO ATUAL TRABALHA COM INDICE 0
 			this.removeNaPosicao(posicao);
+		}else if(posicao == 0) {
+			this.removePrimeiro();
+		}else if(posicao == this.tamanho()-1) {
+			this.removeUltimo();
 		}
 	}
 	

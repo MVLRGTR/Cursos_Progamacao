@@ -40,7 +40,7 @@ public class Work {
 
 	public String toString() {
 		return "Work [name=" + name + ", level=" + level + ", baseSalary=" + baseSalary + ", department=" + department.toString()
-				+ ", contracts=" + contracts + "]";
+				+ ", contracts=" + contracts + " getLevel : " +level.getLevel() + "]";
 	}
 	
 	public String toString2(Integer month , Integer year) {

@@ -1,5 +1,6 @@
 {
   "geoidMaps": {
+    "ae": "https://unitedarabemirates.smartscreen.microsoft.com/",
     "au": "https://australia.smartscreen.microsoft.com/",
     "ch": "https://switzerland.smartscreen.microsoft.com/",
     "eu": "https://europe.smartscreen.microsoft.com/",
@@ -10,6 +11,7 @@
     "test": "https://eu-9.smartscreen.microsoft.com/",
     "uk": "https://unitedkingdom.smartscreen.microsoft.com/",
     "us": "https://unitedstates.smartscreen.microsoft.com/",
+    "gw_ae": "https://unitedarabemirates.smartscreen.microsoft.com/",
     "gw_au": "https://australia.smartscreen.microsoft.com/",
     "gw_ch": "https://switzerland.smartscreen.microsoft.com/",
     "gw_eu": "https://europe.smartscreen.microsoft.com/",

@@ -68,14 +68,15 @@ public class UseListaDuplamenteEncadeada {
 		}
 		
 		System.out.println("-------------------------");
-		System.out.println("Removendo elemento Comprar materias... ");
-		Etapa etapa = new Etapa("Comprar materias",5);
+		System.out.println("Removendo elemento Encher caixão... ");
+		Etapa etapa = new Etapa("Encher caixão",3);
 		lista.removeElemento(etapa);
 		System.out.println("Mostrando Lista!!!");
 		for(int i = 0 ; i < lista.tamanho();i++) {
 			System.out.println("Posição : "+(i+1)+" Valor : "+lista.elementoNaPosicao(i).toString());
 		}
 		
+		lista.removeNaPosicao(7);
 	}
 
 }
