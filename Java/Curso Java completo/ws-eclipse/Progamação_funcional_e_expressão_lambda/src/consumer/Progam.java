@@ -10,6 +10,11 @@ public class Progam {
 		/*
 		 * O Predicate serve para eu fazer filtros de uma determinada classe , já o Consumer serve para eu aplicar algum metodo na classe
 		 * por exemplo  da um desconto  ou acrescimo como  no nosso caso de 10% em todos os produtos.
+		 * 
+		 * Resumo :
+		 * removeIf(Predicate)
+		 * foreach(Consumer)
+		 * map(Function)
 		 * */
 		
 		List<Product> list = new ArrayList<>();

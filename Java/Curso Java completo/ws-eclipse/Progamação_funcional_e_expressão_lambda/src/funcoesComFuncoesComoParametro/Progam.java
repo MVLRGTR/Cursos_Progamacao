@@ -1,34 +1,26 @@
-package predicate;
+package funcoesComFuncoesComoParametro;
 
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class Progam {
 
 	public static void main(String[] args) {
+		
 		List<Product> list = new ArrayList<>();
-		
-		/*
-		 * Utilizamos o predicate para poder fazer filtros nas listas
-		 * 
-		 * Resumo :
-		 * removeIf(Predicate)
-		 * foreach(Consumer)
-		 * map(Function)
-		 * */
-		
+
 		list.add(new Product("TV", 900.00));
 		list.add(new Product("Notebook", 1200.00));
 		list.add(new Product("Tablet", 450.00));
 		list.add(new Product("Mouse", 50.00));
 		list.add(new Product("Table", 80.00));
 		
-		list.removeIf(new ProductPredicate());
+		ProductService ps = new ProductService();
 		
-		for(Product p : list) {
-			System.out.println(p);
-		}
-
+		double sm = ps.filteredSum(list,p -> p.getName().charAt(0)=='M');
+		
+		System.out.println("Sum = "+ String.format("%.2f", sm));
 	}
 
 }
