@@ -27,7 +27,7 @@ public class Progam {
 		double avg = productsList.stream().map(Product::getPrice).reduce(0.0, (x,y) -> x+y) / productsList.size();
 		List<String> names = productsList.stream()
 				.filter(x -> x.getPrice() <= avg)
-				.map(x ->x.getName())
+				.map(x -> x.getName())
 				.sorted(comp.reversed())
 				.collect(Collectors.toList());
 		
