@@ -9,6 +9,7 @@ public class Department implements Serializable{
 	 * Serializable fas com que o nosso objeto seja transformado em sequencias de bytes , 
 	 * para poder gravar os nosso objetos em arquivos , fazer transmissão em rede.
 	 */
+	
 	private static final long serialVersionUID = 1L;
 	private Integer id;
 	private String name;
