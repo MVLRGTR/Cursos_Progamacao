@@ -57,7 +57,11 @@ public class Progam {
 		
 		System.out.println("===== Teste 5 Delete =====");
 		Seller sellerDelete = sellerDao.findById(24);
-		sellerDao.deleteById(sellerDelete.getId());
+		if(sellerDelete != null) {
+			sellerDao.deleteById(sellerDelete.getId());
+		}else {
+			System.out.println("O objeto não existe no banco de dados !!!");
+		}
 		
 		System.out.println();
 		
