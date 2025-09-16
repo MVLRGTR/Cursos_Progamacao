@@ -13,6 +13,10 @@ public class Progam {
 		System.out.println(pessoa2);
 		System.out.println(pessoa3);
 		
+		System.out.println("Java version: " + System.getProperty("java.version"));
+        System.out.println("Java vendor: " + System.getProperty("java.vendor"));
+        System.out.println("Java home: " + System.getProperty("java.home"));
+		
 	}
 
 }
