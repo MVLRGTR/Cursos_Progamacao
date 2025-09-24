@@ -28,7 +28,7 @@ public class User implements Serializable{
 	private String password;
 	
 	@JsonIgnore //preciso implementar essa anotação para que o loop não aconteça , pois temos um referenciação de mão dupla entre as classes 
-	@OneToMany(mappedBy = "client") // aqui eu informo como ele está mapeado na classe order
+	@OneToMany(mappedBy = "client") // aqui eu informo como ele está mapeado na classe order , o relacionamento foi feito na outra classe e aqui eu apenas faço essa referencia ao mapeamento
 	private List<Order> orders = new ArrayList<Order>();
 	
 	public User() {
