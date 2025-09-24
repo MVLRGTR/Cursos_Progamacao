@@ -2,6 +2,9 @@ package com.apredendoeduca.course.entities;
 
 import java.io.Serializable;
 import java.time.Instant;
+import java.util.HashSet;
+import java.util.Objects;
+import java.util.Set;
 
 import com.apredendoeduca.course.entities.enums.OrderStatus;
 import com.fasterxml.jackson.annotation.JsonFormat;
@@ -12,6 +15,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity
@@ -29,6 +33,9 @@ public class Order implements Serializable{
 	@ManyToOne //aqui informo ao JPA o tipo de relacionamento que é muitos para 1
 	@JoinColumn(name = "client_id") // aqui informo o nome chave estrangeira 
 	private User client;
+
+	@OneToMany(mappedBy = "id.order")
+	private Set<OrderItem> items = new HashSet<>();
 	
 	public Order() {
 	}
@@ -74,6 +81,27 @@ public class Order implements Serializable{
 		if(orderStatus != null) {
 			this.orderStatus = orderStatus.GetCode();
 		}
+	}
+	
+	public Set<OrderItem> getItems(){
+		return items;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(id);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Order other = (Order) obj;
+		return Objects.equals(id, other.id);
 	}
 	
 	
