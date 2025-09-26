@@ -15,7 +15,7 @@ import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "tb_user") //nome da tablea no banco de dados h2
+@Table(name = "tb_user") //nome da tabela no banco de dados h2
 public class User implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
