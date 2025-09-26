@@ -11,6 +11,7 @@ import org.springframework.context.annotation.Profile;
 import com.apredendoeduca.course.entities.Category;
 import com.apredendoeduca.course.entities.Order;
 import com.apredendoeduca.course.entities.OrderItem;
+import com.apredendoeduca.course.entities.Payment;
 import com.apredendoeduca.course.entities.Product;
 import com.apredendoeduca.course.entities.User;
 import com.apredendoeduca.course.entities.enums.OrderStatus;
@@ -78,5 +79,10 @@ public class TestConfig implements CommandLineRunner{ //o comandlinerun serve pa
 		OrderItem oi4 = new OrderItem(o3, p5, 2, p5.getPrice());
 		
 		orderItemRepository.saveAll(Arrays.asList(oi1,oi2,oi3,oi4));
+		
+		Payment pay1 = new Payment(null,Instant.parse("2019-06-20T21:53:07Z"),o1);
+		o1.setPayment(pay1);   // como payment depende de uma ordem então eu chamo o1 faço o set e depois escrevo no banco de dados
+		
+		orderRepository.save(o1);
 	}
 }
