@@ -11,6 +11,8 @@ import com.apredendoeduca.course.repositories.UserRepository;
 import com.apredendoeduca.course.services.exceptions.DatabaseException;
 import com.apredendoeduca.course.services.exceptions.ResourceNotFoundException;
 
+import jakarta.persistence.EntityNotFoundException;
+
 @Service //registro no spring uma camda de serviço
 public class UserService {
 	
@@ -44,9 +46,14 @@ public class UserService {
 	}
 	
 	public User update(Long id ,User user) {
-		User entity = repository.getReferenceById(id);  //isso aqui faz com que o jpa faça a referenciação ao objeto sem precisar fazer a consulta no banco\
-		updateData(entity,user);
-		return repository.save(entity);
+		
+		try {
+			User entity = repository.getReferenceById(id);  //isso aqui faz com que o jpa faça a referenciação ao objeto sem precisar fazer a consulta no banco\
+			updateData(entity,user);
+			return repository.save(entity);
+		}catch(EntityNotFoundException e) {
+			throw new ResourceNotFoundException(id);
+		}
 	}
 
 	private void updateData(User entity, User user) {
