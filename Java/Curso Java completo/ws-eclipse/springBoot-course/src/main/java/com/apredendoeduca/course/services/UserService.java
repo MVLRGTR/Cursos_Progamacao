@@ -3,10 +3,12 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
 
 import com.apredendoeduca.course.entities.User;
 import com.apredendoeduca.course.repositories.UserRepository;
+import com.apredendoeduca.course.services.exceptions.DatabaseException;
 import com.apredendoeduca.course.services.exceptions.ResourceNotFoundException;
 
 @Service //registro no spring uma camda de serviço
@@ -21,7 +23,7 @@ public class UserService {
 	
 	public User findyById(Long id) {
 		Optional<User> obj = repository.findById(id);
-		return obj.orElseThrow(()-> new ResourceNotFoundException(id)); // caso o objeto não exista eu faço o lançamento de exceção 
+		return obj.orElseThrow(()-> new ResourceNotFoundException(id)); // caso o objeto não exista eu faço o lançamento de exceção  ResourceNotFoundException
 	}
 	
 	public User insert(User user) {
@@ -29,7 +31,16 @@ public class UserService {
 	}
 	
 	public void delete(Long id) {
-		repository.deleteById(id);
+		try {
+			Optional<User> obj = repository.findById(id);
+			obj.orElseThrow(()-> new ResourceNotFoundException(id));
+			repository.deleteById(id);
+		}catch (ResourceNotFoundException  e) {
+			throw new ResourceNotFoundException(id);
+		}
+		catch(DataIntegrityViolationException e) {
+			throw new DatabaseException(e.getMessage());
+		}
 	}
 	
 	public User update(Long id ,User user) {
