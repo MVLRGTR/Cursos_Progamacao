@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.apredendoeduca.course.entities.User;
 import com.apredendoeduca.course.repositories.UserRepository;
+import com.apredendoeduca.course.services.exceptions.ResourceNotFoundException;
 
 @Service //registro no spring uma camda de serviço
 public class UserService {
@@ -20,7 +21,7 @@ public class UserService {
 	
 	public User findyById(Long id) {
 		Optional<User> obj = repository.findById(id);
-		return obj.get();
+		return obj.orElseThrow(()-> new ResourceNotFoundException(id)); // caso o objeto não exista eu faço o lançamento de exceção 
 	}
 	
 	public User insert(User user) {
@@ -32,7 +33,7 @@ public class UserService {
 	}
 	
 	public User update(Long id ,User user) {
-		User entity = repository.getReferenceById(id);  //isso aqui faz com que o jpa faça a referenciação ao objeto sem precisar fazer a consulta no banco
+		User entity = repository.getReferenceById(id);  //isso aqui faz com que o jpa faça a referenciação ao objeto sem precisar fazer a consulta no banco\
 		updateData(entity,user);
 		return repository.save(entity);
 	}
