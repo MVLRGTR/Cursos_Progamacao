@@ -5,7 +5,7 @@ Meu objetivo é centralizar, revisar e demonstrar minha evolução na área de d
 
 >Cada pasta representa um curso específico, contendo exercícios, anotações e projetos criados durante o aprendizado.
 
---
+
 
 📑 Índice
 
@@ -32,15 +32,18 @@ Meu objetivo é centralizar, revisar e demonstrar minha evolução na área de d
 📌 Observação
 
 
+--
+
+
 # 🗄️ Banco de Dados
 
-*📚 Cursos incluídos:
+* 📚 Cursos incluídos:
 
 **MySQL**
 
 **MariaDB**
 
-*📝 Conteúdos abordados:
+* 📝 Conteúdos abordados:
 
 **SQL básico e avançado**
 
@@ -52,7 +55,7 @@ Meu objetivo é centralizar, revisar e demonstrar minha evolução na área de d
 
 📁 As pastas contêm scripts, exercícios resolvidos, modelos e práticas reais.
 
---
+
 
 # 🔧 Estrutura de Dados
 
@@ -70,7 +73,7 @@ Meu objetivo é centralizar, revisar e demonstrar minha evolução na área de d
 
 💡 Base fundamental para lógica de programação, entrevistas técnicas e código eficiente.
 
---
+
 
 # 🎨 HTML & CSS
 
@@ -86,7 +89,7 @@ Meu objetivo é centralizar, revisar e demonstrar minha evolução na área de d
 
 📁 Inclui mini-projetos, páginas teste e estudos de layout.
 
---
+
 
 # ☕ Java
 
@@ -114,7 +117,7 @@ Meu objetivo é centralizar, revisar e demonstrar minha evolução na área de d
 
 📁 Exercícios, desafios e pequenos sistemas desenvolvidos ao longo do curso.
 
---
+
 
 # 📜 JavaScript
 
@@ -148,7 +151,7 @@ Meu objetivo é centralizar, revisar e demonstrar minha evolução na área de d
 
 📁 Desde exercícios básicos até mini APIs completas.
 
---
+
 
 # 🐧 Linux
 
@@ -166,7 +169,7 @@ Meu objetivo é centralizar, revisar e demonstrar minha evolução na área de d
 
 📁 Scripts, anotações e comandos úteis para uso profissional e DevOps.
 
---
+
 
 
 # 🐍 Python
@@ -183,7 +186,7 @@ Meu objetivo é centralizar, revisar e demonstrar minha evolução na área de d
 
 📁 Scripts práticos e exercícios variados.
 
---
+
 
 # ⚛️ React
 
@@ -203,7 +206,7 @@ Meu objetivo é centralizar, revisar e demonstrar minha evolução na área de d
 
 📁 Projetos simples e exercícios modulares.
 
---
+
 
 # 🔷 TypeScript
 
@@ -221,7 +224,7 @@ Meu objetivo é centralizar, revisar e demonstrar minha evolução na área de d
 
 📁 Exemplos reais, experimentos e conversão de código.
 
---
+
 
 # 🎯 Objetivo do Repositório
 
@@ -239,7 +242,7 @@ Servir como portfólio técnico público
 
 Ele está em constante crescimento conforme avanço nos estudos.
 
---
+
 
 # 📌 Observação
 
