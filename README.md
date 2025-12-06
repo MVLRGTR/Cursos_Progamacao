@@ -1,9 +1,11 @@
-📚 Repositório de Estudos & Cursos de Programação
+# 📚 Repositório de Estudos & Cursos de Programação
 
 Este repositório reúne todos os cursos de programação que concluí ou estou estudando atualmente.
 Meu objetivo é centralizar, revisar e demonstrar minha evolução na área de desenvolvimento.
 
-Cada pasta representa um curso específico, contendo exercícios, anotações e projetos criados durante o aprendizado.
+>Cada pasta representa um curso específico, contendo exercícios, anotações e projetos criados durante o aprendizado.
+
+--
 
 📑 Índice
 
@@ -30,188 +32,198 @@ Cada pasta representa um curso específico, contendo exercícios, anotações e 
 📌 Observação
 
 
-🗄️ Banco de Dados
+# 🗄️ Banco de Dados
 
-📚 Cursos incluídos:
+*📚 Cursos incluídos:
 
-MySQL
+**MySQL**
 
-MariaDB
+**MariaDB**
 
-📝 Conteúdos abordados:
+*📝 Conteúdos abordados:
 
-SQL básico e avançado
+**SQL básico e avançado**
 
-JOINs, Procedures, Views
+**JOINs, Procedures, Views**
 
-Modelagem de dados
+**Modelagem de dados**
 
-Administração básica
+**Administração básica**
 
 📁 As pastas contêm scripts, exercícios resolvidos, modelos e práticas reais.
 
+--
 
-🔧 Estrutura de Dados
+# 🔧 Estrutura de Dados
 
-📚 Estudos sobre:
+* 📚 Estudos sobre:
 
-Listas
+**Listas**
 
-Pilhas
+**Pilhas**
 
-Filas
+**Filas**
 
-Árvores
+**Árvores**
 
-Algoritmos de ordenação e busca
+**Algoritmos de ordenação e busca**
 
 💡 Base fundamental para lógica de programação, entrevistas técnicas e código eficiente.
 
+--
 
-🎨 HTML & CSS
+# 🎨 HTML & CSS
 
-📚 Conteúdo:
+* 📚 Conteúdo:
 
-Estruturação HTML semântica
+**Estruturação HTML semântica**
 
-CSS moderno
+**CSS moderno**
 
-Responsividade
+**Responsividade**
 
-Flexbox & Grid
+**Flexbox & Grid**
 
 📁 Inclui mini-projetos, páginas teste e estudos de layout.
 
+--
 
-☕ Java
+# ☕ Java
 
-📚 Cursos presentes:
+* 📚 Cursos presentes:
 
-Curso em Vídeo (Gustavo Guanabara)
+**Curso em Vídeo (Gustavo Guanabara)**
 
-Java Completo – Nélio Alves
+**Java Completo – Nélio Alves**
 
-📝 Conteúdos estudados:
+* 📝 Conteúdos estudados:
 
-Sintaxe e lógica
+**Sintaxe e lógica**
 
-Programação Orientada a Objetos
+**Programação Orientada a Objetos**
 
-Collections
+**Collections**
 
-Exceções
+**Exceções**
 
-JDBC
+**JDBC**
 
-Estruturas profissionais do Java moderno
+**Estruturas profissionais do Java moderno**
 
-Noções do SpringBoot
+**Noções do SpringBoot**
 
 📁 Exercícios, desafios e pequenos sistemas desenvolvidos ao longo do curso.
 
+--
 
-📜 JavaScript
+# 📜 JavaScript
 
-📚 Cursos concluídos:
+* 📚 Cursos concluídos:
 
-Curso em Vídeo
+**Curso em Vídeo**
 
-Curso CFB
+**Curso CFB**
 
-Curso NodeJS
+**Curso NodeJS**
 
-Curso Introdução API
+**Curso Introdução API**
 
-Nodemailer
+**Nodemailer**
 
-Zod (validações avançadas)
+**Zod (validações avançadas)**
 
-📝 Conteúdos abordados:
+* 📝 Conteúdos abordados:
 
-ES6+
+**ES6+**
 
-DOM
+**DOM**
 
-Backend com Node.js
+**Backend com Node.js**
 
-Criação de APIs
+**Criação de APIs**
 
-Envio de e-mails
+**Envio de e-mails**
 
-React
+**React**
 
 📁 Desde exercícios básicos até mini APIs completas.
 
+--
 
-🐧 Linux
+# 🐧 Linux
 
-📚 Conteúdo:
+* 📚 Conteúdo:
 
-Terminal
+**Terminal**
 
-Acl, permissões e usuários
+**Acl, permissões e usuários**
 
-Shell Script
+**Shell Script**
 
-Gerenciamento de serviços
+**Gerenciamento de serviços**
 
-Pacotes e estrutura do sistema
+**Pacotes e estrutura do sistema**
 
 📁 Scripts, anotações e comandos úteis para uso profissional e DevOps.
 
+--
 
-🐍 Python
 
-📚 Estudos sobre:
+# 🐍 Python
 
-Sintaxe e lógica
+* 📚 Estudos sobre:
 
-Manipulação de arquivos
+**Sintaxe e lógica**
 
-Funções e módulos
+**Manipulação de arquivos**
 
-Automação
+**Funções e módulos**
+
+**Automação**
 
 📁 Scripts práticos e exercícios variados.
 
+--
 
-⚛️ React
+# ⚛️ React
 
-📚 Conteúdo estudado:
+* 📚 Conteúdo estudado:
 
-Componentes
+**Componentes**
 
-Hooks
+**Hooks**
 
-Props & State
+**Props & State**
 
-Rotas
+**Rotas**
 
-APIs
+**APIs**
 
-Boas práticas
+**Boas práticas**
 
 📁 Projetos simples e exercícios modulares.
 
+--
 
-🔷 TypeScript
+# 🔷 TypeScript
 
-📚 Conteúdos:
+* 📚 Conteúdos:
 
-Tipagem estática
+**Tipagem estática**
 
-Types & Interfaces
+**Types & Interfaces**
 
-Classes
+**Classes**
 
-Integração com Node e React
+**Integração com Node e React**
 
-Refatoração de projetos JS
+**Refatoração de projetos JS**
 
 📁 Exemplos reais, experimentos e conversão de código.
 
+--
 
-🎯 Objetivo do Repositório
+# 🎯 Objetivo do Repositório
 
 Este repositório existe para:
 
@@ -227,9 +239,10 @@ Servir como portfólio técnico público
 
 Ele está em constante crescimento conforme avanço nos estudos.
 
+--
 
-📌 Observação
+# 📌 Observação
 
-📥 Novas pastas e conteúdos serão adicionados regularmente.
-📘 Este repositório é um mapa completo da minha jornada na programação.
-🚀 Evolução contínua!
+**📥 Novas pastas e conteúdos serão adicionados regularmente.**
+**📘 Este repositório é um mapa completo da minha jornada na programação.**
+**🚀 Evolução contínua!**
