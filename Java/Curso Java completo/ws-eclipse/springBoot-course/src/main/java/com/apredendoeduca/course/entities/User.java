@@ -1,26 +1,35 @@
 package com.apredendoeduca.course.entities;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "tb_user") //nome da tablea no banco de dados h2
+@Table(name = "tb_user") //nome da tabela no banco de dados h2
 public class User implements Serializable{
 	private static final long serialVersionUID = 1L;
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)  //informo a primarykey e a geração automatica do id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)  //informo a primarykey e a geração automatica do id pelo banco
 	private Long id;
 	private String name;
 	private String email;
 	private String phone;
 	private String password;
+	
+	@JsonIgnore //preciso implementar essa anotação para que o loop não aconteça , pois temos um referenciação de mão dupla entre as classes 
+	@OneToMany(mappedBy = "client") // aqui eu informo como ele está mapeado na classe order , o relacionamento foi feito na outra classe e aqui eu apenas faço essa referencia ao mapeamento
+	private List<Order> orders = new ArrayList<Order>();
 	
 	public User() {
 	}
@@ -72,6 +81,10 @@ public class User implements Serializable{
 	public void setPassword(String password) {
 		this.password = password;
 	}
+	
+	public List<Order> getOrders() {
+		return orders;
+	}
 
 	@Override
 	public int hashCode() {
@@ -89,7 +102,5 @@ public class User implements Serializable{
 		User other = (User) obj;
 		return Objects.equals(name, other.name);
 	}
-	
-	
-	
+
 }
