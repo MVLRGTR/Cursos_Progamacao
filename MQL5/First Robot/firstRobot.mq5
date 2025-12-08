@@ -1,10 +1,10 @@
 //+------------------------------------------------------------------+
 //|                                                  Robo_MM_IFR.mq5 |
 //|                                          digitalmindkr@gmail.com |
-//|                                               github.com/mvlrgtr |
+//|                                                digitalmindkr.com |
 //+------------------------------------------------------------------+
 #property copyright "digitalmindkr@gmail.com"
-#property link      " github.com/mvlrgtr"
+#property link      "digitalmindkr.com"
 #property version   "1.00"
 //---
 enum ESTRATEGIA_ENTRADA
