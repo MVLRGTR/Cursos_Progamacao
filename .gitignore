@@ -10,3 +10,41 @@
 /React/React Next/aulas
 /Javascript/Cursos Introdutorios API/Curso API/mysql_data
 /.metadata/
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# TypeScript
+dist/
+build/
+tsconfig.tsbuildinfo
+
+# React / Next
+.next/
+out/
+coverage/
+
+# Java (Eclipse / Spring Boot)
+.metadata/
+target/
+bin/
+.mvn/
+dependency-reduced-pom.xml
+
+# Python
+__pycache__/
+*.pyc
+
+# IDEs
+.vscode/
+.idea/
+.DS_Store
+
+# Outros
+mysql_data/
+.env
+.env.*
+*.log
