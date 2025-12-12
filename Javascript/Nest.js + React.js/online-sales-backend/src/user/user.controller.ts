@@ -1,5 +1,6 @@
 import { Body, Controller, Get, Post } from '@nestjs/common';
 import type { CreateUserDTO } from './dtos/createUser.dtos';
+import { UserService } from './user.service';
 
 @Controller('user')
 export class UserController {
@@ -10,11 +11,9 @@ export class UserController {
         )
     }
 
+    constructor(private readonly userService: UserService){}
     @Post() async createUser(@Body() createUser: CreateUserDTO) {
-        return {
-            ...createUser,
-            password:undefined
-        }
+        return this.userService.createUser(createUser)
     }
 
 }
